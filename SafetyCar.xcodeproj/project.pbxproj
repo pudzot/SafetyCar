@@ -272,6 +272,7 @@
 				1B030DF329C12A6800FC9A57 /* Service */,
 				1B93E7C729B624ED00212F48 /* Sounds */,
 				1B93E7B829B6217400212F48 /* Assets.xcassets */,
+				1B7AF76B29C5A8CE00BB6377 /* GoogleService-Info.plist */,
 				1B93E7BA29B6217400212F48 /* LaunchScreen.storyboard */,
 				1B93E7BD29B6217400212F48 /* Info.plist */,
 				1BFF139B29B63EAC001F28C0 /* Home.gpx */,
@@ -292,7 +293,6 @@
 		1B93E7C729B624ED00212F48 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				1B7AF76B29C5A8CE00BB6377 /* GoogleService-Info.plist */,
 				1B93E7C829B624ED00212F48 /* WelcomeHome.wav */,
 				1B93E7C929B624ED00212F48 /* WaterDrops.wav */,
 				1B93E7CA29B624ED00212F48 /* Anniversary.wav */,
