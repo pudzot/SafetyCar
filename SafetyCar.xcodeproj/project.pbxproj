@@ -7,23 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B030DF229C12A5200FC9A57 /* CarServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B030DF129C12A5200FC9A57 /* CarServiceViewController.swift */; };
+		1B030DF529C12A9A00FC9A57 /* CarServiceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B030DF429C12A9A00FC9A57 /* CarServiceCoordinator.swift */; };
+		1B030DF729C12AAD00FC9A57 /* CarServicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B030DF629C12AAD00FC9A57 /* CarServicePresenter.swift */; };
+		1B07B46A29C1D00800EB4B3F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B46929C1D00800EB4B3F /* Extension.swift */; };
+		1B07B46C29C1D27400EB4B3F /* CarCurrentPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B46B29C1D27400EB4B3F /* CarCurrentPresenterType.swift */; };
+		1B07B46E29C1D30E00EB4B3F /* CarCurrentViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B46D29C1D30E00EB4B3F /* CarCurrentViewType.swift */; };
+		1B07B47029C1E70800EB4B3F /* FuelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B46F29C1E70800EB4B3F /* FuelCoordinator.swift */; };
+		1B07B47229C1E7CD00EB4B3F /* FuelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47129C1E7CD00EB4B3F /* FuelPresenter.swift */; };
+		1B07B47429C1E7E000EB4B3F /* FuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47329C1E7E000EB4B3F /* FuelViewController.swift */; };
+		1B07B47629C389AE00EB4B3F /* FuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47529C389AE00EB4B3F /* FuelTableViewCell.swift */; };
+		1B102FDD29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */; };
+		1B1B86A429CB993800A8E10F /* GarageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */; };
+		1B4B5EFA29BDD708006E60AB /* CarCurrentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B5EF929BDD708006E60AB /* CarCurrentPresenter.swift */; };
+		1B7AF76429C5A31F00BB6377 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7AF76329C5A31F00BB6377 /* FirebaseAnalytics */; };
+		1B7AF76629C5A31F00BB6377 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7AF76529C5A31F00BB6377 /* FirebaseAnalyticsSwift */; };
+		1B7AF76829C5A31F00BB6377 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7AF76729C5A31F00BB6377 /* FirebaseAuth */; };
+		1B7AF76A29C5A31F00BB6377 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7AF76929C5A31F00BB6377 /* FirebaseDatabase */; };
+		1B7AF76C29C5A8CE00BB6377 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7AF76B29C5A8CE00BB6377 /* GoogleService-Info.plist */; };
+		1B7AF76E29C5ADD000BB6377 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7AF76D29C5ADD000BB6377 /* AuthenticationService.swift */; };
+		1B7AF77229C5AE7C00BB6377 /* CarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7AF77129C5AE7C00BB6377 /* CarsService.swift */; };
+		1B7AF77529C5BE0600BB6377 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7AF77429C5BE0600BB6377 /* Car.swift */; };
+		1B7AF77729C5C0E500BB6377 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7AF77629C5C0E500BB6377 /* User.swift */; };
+		1B7D2D8C29C1AB190072DA6E /* VehicleAccessModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D2D8B29C1AB190072DA6E /* VehicleAccessModelItem.swift */; };
+		1B8887E429C8ABA800F12012 /* GarageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8887E329C8ABA800F12012 /* GarageCoordinator.swift */; };
+		1B8887E629C8AD4500F12012 /* GaragePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8887E529C8AD4500F12012 /* GaragePresenter.swift */; };
+		1B8887E829C8AF2600F12012 /* GarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8887E729C8AF2600F12012 /* GarageViewController.swift */; };
 		1B93E7B029B6217200212F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7AF29B6217200212F48 /* AppDelegate.swift */; };
 		1B93E7B229B6217200212F48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7B129B6217200212F48 /* SceneDelegate.swift */; };
-		1B93E7B429B6217200212F48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7B329B6217200212F48 /* ViewController.swift */; };
-		1B93E7B729B6217200212F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B93E7B529B6217200212F48 /* Main.storyboard */; };
+		1B93E7B429B6217200212F48 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7B329B6217200212F48 /* WelcomeViewController.swift */; };
 		1B93E7B929B6217400212F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B93E7B829B6217400212F48 /* Assets.xcassets */; };
 		1B93E7BC29B6217400212F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B93E7BA29B6217400212F48 /* LaunchScreen.storyboard */; };
+		1B93E7C429B6222900212F48 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7C329B6222900212F48 /* NotificationService.swift */; };
+		1B93E7C629B622B500212F48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7C529B622B500212F48 /* Constants.swift */; };
+		1B93E7CB29B624ED00212F48 /* WelcomeHome.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B93E7C829B624ED00212F48 /* WelcomeHome.wav */; };
+		1B93E7CC29B624ED00212F48 /* WaterDrops.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B93E7C929B624ED00212F48 /* WaterDrops.wav */; };
+		1B93E7CD29B624ED00212F48 /* Anniversary.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B93E7CA29B624ED00212F48 /* Anniversary.wav */; };
+		1B93E7CF29B625BB00212F48 /* UNNotificationSoundName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7CE29B625BB00212F48 /* UNNotificationSoundName+Extensions.swift */; };
+		1B93E7D129B626A000212F48 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7D029B626A000212F48 /* LocationService.swift */; };
+		1B93E7D329B6332E00212F48 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7D229B6332E00212F48 /* UIViewController+Extensions.swift */; };
+		1BAED5F829C84029001F54EF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAED5F729C84029001F54EF /* UserService.swift */; };
+		1BDC781829BB381A00F93927 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC781729BB381A00F93927 /* WelcomeView.swift */; };
+		1BDC781A29BB3F1C00F93927 /* 38435-register.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BDC781929BB3F1C00F93927 /* 38435-register.json */; };
+		1BDC782429BCB03A00F93927 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC782329BCB03A00F93927 /* TabBarController.swift */; };
+		1BDC782629BCB12900F93927 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC782529BCB12900F93927 /* TabBarCoordinator.swift */; };
+		1BDC782829BCBA4F00F93927 /* CarCurrentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC782729BCBA4F00F93927 /* CarCurrentCoordinator.swift */; };
+		1BDC782B29BCC9D100F93927 /* CarCurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC782A29BCC9D100F93927 /* CarCurrentViewController.swift */; };
+		1BDC782D29BCD10D00F93927 /* CarCurrentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC782C29BCD10D00F93927 /* CarCurrentHeaderView.swift */; };
+		1BE68A5529B91B5B00172CED /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE68A5429B91B5B00172CED /* WelcomeCoordinator.swift */; };
+		1BE68A5729B91C3E00172CED /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE68A5629B91C3E00172CED /* WelcomePresenter.swift */; };
+		1BFF139E29B63EAC001F28C0 /* Home.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF139B29B63EAC001F28C0 /* Home.gpx */; };
+		1BFF139F29B63EAC001F28C0 /* Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF139C29B63EAC001F28C0 /* Park.gpx */; };
+		1BFF13A029B63EAC001F28C0 /* SimulatedLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF139D29B63EAC001F28C0 /* SimulatedLocations.gpx */; };
+		1BFF13A429B68DB4001F28C0 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF13A329B68DB4001F28C0 /* NavigationController.swift */; };
+		1BFF13A629B68E9A001F28C0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF13A529B68E9A001F28C0 /* Router.swift */; };
+		1BFF13A829B68EED001F28C0 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF13A729B68EED001F28C0 /* Presentable.swift */; };
+		1BFF13AA29B68F9B001F28C0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF13A929B68F9B001F28C0 /* Coordinator.swift */; };
+		1BFF13AC29B691A7001F28C0 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF13AB29B691A7001F28C0 /* Store.swift */; };
+		1BFF13AE29B692C8001F28C0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF13AD29B692C8001F28C0 /* AppCoordinator.swift */; };
+		F330FA1657001C23CDEF6906 /* Pods_SafetyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E811C15455B9C31BF82E7DB1 /* Pods_SafetyCar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B030DF129C12A5200FC9A57 /* CarServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServiceViewController.swift; sourceTree = "<group>"; };
+		1B030DF429C12A9A00FC9A57 /* CarServiceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServiceCoordinator.swift; sourceTree = "<group>"; };
+		1B030DF629C12AAD00FC9A57 /* CarServicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServicePresenter.swift; sourceTree = "<group>"; };
+		1B07B46929C1D00800EB4B3F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		1B07B46B29C1D27400EB4B3F /* CarCurrentPresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentPresenterType.swift; sourceTree = "<group>"; };
+		1B07B46D29C1D30E00EB4B3F /* CarCurrentViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentViewType.swift; sourceTree = "<group>"; };
+		1B07B46F29C1E70800EB4B3F /* FuelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCoordinator.swift; sourceTree = "<group>"; };
+		1B07B47129C1E7CD00EB4B3F /* FuelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelPresenter.swift; sourceTree = "<group>"; };
+		1B07B47329C1E7E000EB4B3F /* FuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewController.swift; sourceTree = "<group>"; };
+		1B07B47529C389AE00EB4B3F /* FuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTableViewCell.swift; sourceTree = "<group>"; };
+		1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTableViewCell.swift; sourceTree = "<group>"; };
+		1B4B5EF929BDD708006E60AB /* CarCurrentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentPresenter.swift; sourceTree = "<group>"; };
+		1B7AF76B29C5A8CE00BB6377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B7AF76D29C5ADD000BB6377 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		1B7AF77129C5AE7C00BB6377 /* CarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsService.swift; sourceTree = "<group>"; };
+		1B7AF77429C5BE0600BB6377 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		1B7AF77629C5C0E500BB6377 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1B7D2D8B29C1AB190072DA6E /* VehicleAccessModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAccessModelItem.swift; sourceTree = "<group>"; };
+		1B8887E329C8ABA800F12012 /* GarageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageCoordinator.swift; sourceTree = "<group>"; };
+		1B8887E529C8AD4500F12012 /* GaragePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragePresenter.swift; sourceTree = "<group>"; };
+		1B8887E729C8AF2600F12012 /* GarageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageViewController.swift; sourceTree = "<group>"; };
 		1B93E7AC29B6217200212F48 /* SafetyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafetyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B93E7AF29B6217200212F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B93E7B129B6217200212F48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B93E7B329B6217200212F48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B93E7B629B6217200212F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B93E7B329B6217200212F48 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1B93E7B829B6217400212F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B93E7BB29B6217400212F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B93E7BD29B6217400212F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B93E7C329B6222900212F48 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		1B93E7C529B622B500212F48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B93E7C829B624ED00212F48 /* WelcomeHome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = WelcomeHome.wav; sourceTree = "<group>"; };
+		1B93E7C929B624ED00212F48 /* WaterDrops.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = WaterDrops.wav; sourceTree = "<group>"; };
+		1B93E7CA29B624ED00212F48 /* Anniversary.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Anniversary.wav; sourceTree = "<group>"; };
+		1B93E7CE29B625BB00212F48 /* UNNotificationSoundName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UNNotificationSoundName+Extensions.swift"; sourceTree = "<group>"; };
+		1B93E7D029B626A000212F48 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		1B93E7D229B6332E00212F48 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1BAED5F729C84029001F54EF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		1BDC781729BB381A00F93927 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1BDC781929BB3F1C00F93927 /* 38435-register.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38435-register.json"; sourceTree = "<group>"; };
+		1BDC782329BCB03A00F93927 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1BDC782529BCB12900F93927 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		1BDC782729BCBA4F00F93927 /* CarCurrentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentCoordinator.swift; sourceTree = "<group>"; };
+		1BDC782A29BCC9D100F93927 /* CarCurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentViewController.swift; sourceTree = "<group>"; };
+		1BDC782C29BCD10D00F93927 /* CarCurrentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentHeaderView.swift; sourceTree = "<group>"; };
+		1BE68A5429B91B5B00172CED /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
+		1BE68A5629B91C3E00172CED /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		1BFF139B29B63EAC001F28C0 /* Home.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Home.gpx; sourceTree = "<group>"; };
+		1BFF139C29B63EAC001F28C0 /* Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Park.gpx; sourceTree = "<group>"; };
+		1BFF139D29B63EAC001F28C0 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimulatedLocations.gpx; sourceTree = "<group>"; };
+		1BFF13A329B68DB4001F28C0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		1BFF13A529B68E9A001F28C0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1BFF13A729B68EED001F28C0 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		1BFF13A929B68F9B001F28C0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1BFF13AB29B691A7001F28C0 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1BFF13AD29B692C8001F28C0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		617455CA8FB7373376503842 /* Pods-SafetyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafetyCar.release.xcconfig"; path = "Target Support Files/Pods-SafetyCar/Pods-SafetyCar.release.xcconfig"; sourceTree = "<group>"; };
+		8A0D6534499C2F22E4916F76 /* Pods-SafetyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafetyCar.debug.xcconfig"; path = "Target Support Files/Pods-SafetyCar/Pods-SafetyCar.debug.xcconfig"; sourceTree = "<group>"; };
+		E811C15455B9C31BF82E7DB1 /* Pods_SafetyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafetyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +135,108 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7AF76A29C5A31F00BB6377 /* FirebaseDatabase in Frameworks */,
+				1B7AF76629C5A31F00BB6377 /* FirebaseAnalyticsSwift in Frameworks */,
+				1B7AF76429C5A31F00BB6377 /* FirebaseAnalytics in Frameworks */,
+				F330FA1657001C23CDEF6906 /* Pods_SafetyCar.framework in Frameworks */,
+				1B7AF76829C5A31F00BB6377 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B030DF329C12A6800FC9A57 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1B030DF429C12A9A00FC9A57 /* CarServiceCoordinator.swift */,
+				1B030DF629C12AAD00FC9A57 /* CarServicePresenter.swift */,
+				1B030DF129C12A5200FC9A57 /* CarServiceViewController.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B07B46629C1CEAB00EB4B3F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1BDC782729BCBA4F00F93927 /* CarCurrentCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1B07B46729C1CEC100EB4B3F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1B7D2D8A29C1AAE40072DA6E /* Model */,
+				1B4B5EF929BDD708006E60AB /* CarCurrentPresenter.swift */,
+				1B07B46B29C1D27400EB4B3F /* CarCurrentPresenterType.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1B07B46829C1CEDA00EB4B3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BDC782C29BCD10D00F93927 /* CarCurrentHeaderView.swift */,
+				1BDC782A29BCC9D100F93927 /* CarCurrentViewController.swift */,
+				1B07B46D29C1D30E00EB4B3F /* CarCurrentViewType.swift */,
+				1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B7AF76F29C5ADDD00BB6377 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1B7AF77029C5AE2400BB6377 /* Authentication */,
+				1B7AF77329C5AE8E00BB6377 /* Cars */,
+				1BAED5F729C84029001F54EF /* UserService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B7AF77029C5AE2400BB6377 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1B7AF76D29C5ADD000BB6377 /* AuthenticationService.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1B7AF77329C5AE8E00BB6377 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				1B7AF77129C5AE7C00BB6377 /* CarsService.swift */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		1B7D2D8A29C1AAE40072DA6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B7D2D8B29C1AB190072DA6E /* VehicleAccessModelItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B8887E229C8AB5100F12012 /* FuelConsumption */ = {
+			isa = PBXGroup;
+			children = (
+				1B07B46F29C1E70800EB4B3F /* FuelCoordinator.swift */,
+				1B07B47129C1E7CD00EB4B3F /* FuelPresenter.swift */,
+				1B07B47529C389AE00EB4B3F /* FuelTableViewCell.swift */,
+				1B07B47329C1E7E000EB4B3F /* FuelViewController.swift */,
+			);
+			path = FuelConsumption;
+			sourceTree = "<group>";
+		};
 		1B93E7A329B6217200212F48 = {
 			isa = PBXGroup;
 			children = (
 				1B93E7AE29B6217200212F48 /* SafetyCar */,
 				1B93E7AD29B6217200212F48 /* Products */,
+				752A523A58EFF99C0A5EB610 /* Pods */,
+				EF71F8AD4175C4976337CDDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +253,98 @@
 			children = (
 				1B93E7AF29B6217200212F48 /* AppDelegate.swift */,
 				1B93E7B129B6217200212F48 /* SceneDelegate.swift */,
-				1B93E7B329B6217200212F48 /* ViewController.swift */,
-				1B93E7B529B6217200212F48 /* Main.storyboard */,
+				1B7AF77629C5C0E500BB6377 /* User.swift */,
+				1B7AF77429C5BE0600BB6377 /* Car.swift */,
+				1B7AF76F29C5ADDD00BB6377 /* Networking */,
+				1BDC782229BB8D4A00F93927 /* Welcome */,
+				1BFF13A229B68D89001F28C0 /* NotificationService */,
+				1B93E7C529B622B500212F48 /* Constants.swift */,
+				1B93E7CE29B625BB00212F48 /* UNNotificationSoundName+Extensions.swift */,
+				1B93E7D229B6332E00212F48 /* UIViewController+Extensions.swift */,
+				1BDC782329BCB03A00F93927 /* TabBarController.swift */,
+				1BDC782529BCB12900F93927 /* TabBarCoordinator.swift */,
+				1B8887E329C8ABA800F12012 /* GarageCoordinator.swift */,
+				1B8887E529C8AD4500F12012 /* GaragePresenter.swift */,
+				1B8887E729C8AF2600F12012 /* GarageViewController.swift */,
+				1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */,
+				1B8887E229C8AB5100F12012 /* FuelConsumption */,
+				1BDC782929BCBFD100F93927 /* Car */,
+				1B030DF329C12A6800FC9A57 /* Service */,
+				1B93E7C729B624ED00212F48 /* Sounds */,
 				1B93E7B829B6217400212F48 /* Assets.xcassets */,
 				1B93E7BA29B6217400212F48 /* LaunchScreen.storyboard */,
 				1B93E7BD29B6217400212F48 /* Info.plist */,
+				1BFF139B29B63EAC001F28C0 /* Home.gpx */,
+				1BFF139C29B63EAC001F28C0 /* Park.gpx */,
+				1BFF139D29B63EAC001F28C0 /* SimulatedLocations.gpx */,
+				1BFF13A329B68DB4001F28C0 /* NavigationController.swift */,
+				1BFF13A529B68E9A001F28C0 /* Router.swift */,
+				1BFF13A729B68EED001F28C0 /* Presentable.swift */,
+				1BFF13A929B68F9B001F28C0 /* Coordinator.swift */,
+				1BFF13AB29B691A7001F28C0 /* Store.swift */,
+				1BFF13AD29B692C8001F28C0 /* AppCoordinator.swift */,
+				1B07B46929C1D00800EB4B3F /* Extension.swift */,
+				1BDC781929BB3F1C00F93927 /* 38435-register.json */,
 			);
 			path = SafetyCar;
+			sourceTree = "<group>";
+		};
+		1B93E7C729B624ED00212F48 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1B7AF76B29C5A8CE00BB6377 /* GoogleService-Info.plist */,
+				1B93E7C829B624ED00212F48 /* WelcomeHome.wav */,
+				1B93E7C929B624ED00212F48 /* WaterDrops.wav */,
+				1B93E7CA29B624ED00212F48 /* Anniversary.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		1BDC782229BB8D4A00F93927 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				1BE68A5429B91B5B00172CED /* WelcomeCoordinator.swift */,
+				1BE68A5629B91C3E00172CED /* WelcomePresenter.swift */,
+				1BDC781729BB381A00F93927 /* WelcomeView.swift */,
+				1B93E7B329B6217200212F48 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		1BDC782929BCBFD100F93927 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				1B07B46629C1CEAB00EB4B3F /* Coordinator */,
+				1B07B46729C1CEC100EB4B3F /* Presenter */,
+				1B07B46829C1CEDA00EB4B3F /* View */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		1BFF13A229B68D89001F28C0 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				1B93E7C329B6222900212F48 /* NotificationService.swift */,
+				1B93E7D029B626A000212F48 /* LocationService.swift */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		752A523A58EFF99C0A5EB610 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A0D6534499C2F22E4916F76 /* Pods-SafetyCar.debug.xcconfig */,
+				617455CA8FB7373376503842 /* Pods-SafetyCar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF71F8AD4175C4976337CDDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E811C15455B9C31BF82E7DB1 /* Pods_SafetyCar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +354,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B93E7C029B6217400212F48 /* Build configuration list for PBXNativeTarget "SafetyCar" */;
 			buildPhases = (
+				EC852A8BCB6413884D30F088 /* [CP] Check Pods Manifest.lock */,
 				1B93E7A829B6217200212F48 /* Sources */,
 				1B93E7A929B6217200212F48 /* Frameworks */,
 				1B93E7AA29B6217200212F48 /* Resources */,
+				36F0F1D9E9A3DBCA3B4094ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SafetyCar;
+			packageProductDependencies = (
+				1B7AF76329C5A31F00BB6377 /* FirebaseAnalytics */,
+				1B7AF76529C5A31F00BB6377 /* FirebaseAnalyticsSwift */,
+				1B7AF76729C5A31F00BB6377 /* FirebaseAuth */,
+				1B7AF76929C5A31F00BB6377 /* FirebaseDatabase */,
+			);
 			productName = SafetyCar;
 			productReference = 1B93E7AC29B6217200212F48 /* SafetyCar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +399,10 @@
 				Base,
 			);
 			mainGroup = 1B93E7A329B6217200212F48;
+			packageReferences = (
+				1BDC781D29BB4A2A00F93927 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1B8BAEF929C4FD2200AC3FAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1B93E7AD29B6217200212F48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,36 +417,118 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B93E7CB29B624ED00212F48 /* WelcomeHome.wav in Resources */,
+				1BDC781A29BB3F1C00F93927 /* 38435-register.json in Resources */,
+				1B93E7CD29B624ED00212F48 /* Anniversary.wav in Resources */,
 				1B93E7BC29B6217400212F48 /* LaunchScreen.storyboard in Resources */,
 				1B93E7B929B6217400212F48 /* Assets.xcassets in Resources */,
-				1B93E7B729B6217200212F48 /* Main.storyboard in Resources */,
+				1BFF139F29B63EAC001F28C0 /* Park.gpx in Resources */,
+				1BFF13A029B63EAC001F28C0 /* SimulatedLocations.gpx in Resources */,
+				1B7AF76C29C5A8CE00BB6377 /* GoogleService-Info.plist in Resources */,
+				1BFF139E29B63EAC001F28C0 /* Home.gpx in Resources */,
+				1B93E7CC29B624ED00212F48 /* WaterDrops.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F0F1D9E9A3DBCA3B4094ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SafetyCar/Pods-SafetyCar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SafetyCar/Pods-SafetyCar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SafetyCar/Pods-SafetyCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC852A8BCB6413884D30F088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafetyCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B93E7A829B6217200212F48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B93E7B429B6217200212F48 /* ViewController.swift in Sources */,
+				1B93E7D129B626A000212F48 /* LocationService.swift in Sources */,
+				1B102FDD29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift in Sources */,
+				1B93E7C629B622B500212F48 /* Constants.swift in Sources */,
+				1BFF13A629B68E9A001F28C0 /* Router.swift in Sources */,
+				1BDC782B29BCC9D100F93927 /* CarCurrentViewController.swift in Sources */,
+				1BE68A5529B91B5B00172CED /* WelcomeCoordinator.swift in Sources */,
+				1B93E7C429B6222900212F48 /* NotificationService.swift in Sources */,
+				1B07B46A29C1D00800EB4B3F /* Extension.swift in Sources */,
+				1B030DF529C12A9A00FC9A57 /* CarServiceCoordinator.swift in Sources */,
+				1BDC782829BCBA4F00F93927 /* CarCurrentCoordinator.swift in Sources */,
+				1B93E7CF29B625BB00212F48 /* UNNotificationSoundName+Extensions.swift in Sources */,
+				1B07B46C29C1D27400EB4B3F /* CarCurrentPresenterType.swift in Sources */,
+				1BE68A5729B91C3E00172CED /* WelcomePresenter.swift in Sources */,
+				1BFF13A429B68DB4001F28C0 /* NavigationController.swift in Sources */,
+				1BAED5F829C84029001F54EF /* UserService.swift in Sources */,
+				1B8887E629C8AD4500F12012 /* GaragePresenter.swift in Sources */,
+				1BDC782D29BCD10D00F93927 /* CarCurrentHeaderView.swift in Sources */,
+				1BFF13AE29B692C8001F28C0 /* AppCoordinator.swift in Sources */,
+				1B93E7D329B6332E00212F48 /* UIViewController+Extensions.swift in Sources */,
+				1B7AF77729C5C0E500BB6377 /* User.swift in Sources */,
+				1BFF13AC29B691A7001F28C0 /* Store.swift in Sources */,
+				1B07B47229C1E7CD00EB4B3F /* FuelPresenter.swift in Sources */,
+				1B07B47629C389AE00EB4B3F /* FuelTableViewCell.swift in Sources */,
+				1B93E7B429B6217200212F48 /* WelcomeViewController.swift in Sources */,
+				1BDC782429BCB03A00F93927 /* TabBarController.swift in Sources */,
+				1B4B5EFA29BDD708006E60AB /* CarCurrentPresenter.swift in Sources */,
+				1B8887E429C8ABA800F12012 /* GarageCoordinator.swift in Sources */,
+				1B030DF729C12AAD00FC9A57 /* CarServicePresenter.swift in Sources */,
+				1BFF13AA29B68F9B001F28C0 /* Coordinator.swift in Sources */,
+				1B07B47029C1E70800EB4B3F /* FuelCoordinator.swift in Sources */,
+				1B07B47429C1E7E000EB4B3F /* FuelViewController.swift in Sources */,
+				1BDC781829BB381A00F93927 /* WelcomeView.swift in Sources */,
+				1B7AF77529C5BE0600BB6377 /* Car.swift in Sources */,
 				1B93E7B029B6217200212F48 /* AppDelegate.swift in Sources */,
+				1BDC782629BCB12900F93927 /* TabBarCoordinator.swift in Sources */,
+				1B7AF77229C5AE7C00BB6377 /* CarsService.swift in Sources */,
+				1BFF13A829B68EED001F28C0 /* Presentable.swift in Sources */,
+				1B8887E829C8AF2600F12012 /* GarageViewController.swift in Sources */,
+				1B7AF76E29C5ADD000BB6377 /* AuthenticationService.swift in Sources */,
 				1B93E7B229B6217200212F48 /* SceneDelegate.swift in Sources */,
+				1B030DF229C12A5200FC9A57 /* CarServiceViewController.swift in Sources */,
+				1B7D2D8C29C1AB190072DA6E /* VehicleAccessModelItem.swift in Sources */,
+				1B1B86A429CB993800A8E10F /* GarageTableViewCell.swift in Sources */,
+				1B07B46E29C1D30E00EB4B3F /* CarCurrentViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B93E7B529B6217200212F48 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B93E7B629B6217200212F48 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B93E7BA29B6217400212F48 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +656,7 @@
 		};
 		1B93E7C129B6217400212F48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0D6534499C2F22E4916F76 /* Pods-SafetyCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +667,6 @@
 				INFOPLIST_FILE = SafetyCar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +684,7 @@
 		};
 		1B93E7C229B6217400212F48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617455CA8FB7373376503842 /* Pods-SafetyCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +695,6 @@
 				INFOPLIST_FILE = SafetyCar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +732,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B8BAEF929C4FD2200AC3FAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1BDC781D29BB4A2A00F93927 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B7AF76329C5A31F00BB6377 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B8BAEF929C4FD2200AC3FAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1B7AF76529C5A31F00BB6377 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B8BAEF929C4FD2200AC3FAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		1B7AF76729C5A31F00BB6377 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B8BAEF929C4FD2200AC3FAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1B7AF76929C5A31F00BB6377 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B8BAEF929C4FD2200AC3FAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B93E7A429B6217200212F48 /* Project object */;
 }

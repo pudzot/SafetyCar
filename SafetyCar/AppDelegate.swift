@@ -6,14 +6,42 @@
 //
 
 import UIKit
+import FirebaseCore
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    
+//    private lazy var appStore: StoreType = Store()
+//    private lazy var appNavigationController: NavigationController = NavigationController()
+//    private lazy var appRouter: RouterType = Router(navigationController: self.appNavigationController)
+//    private lazy var appCoordinator: AppCoordinator = AppCoordinator(router: self.appRouter,
+//                                                                     store: self.appStore)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        let appearance = UINavigationBarAppearance()
+           appearance.configureWithOpaqueBackground()
+           appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+           appearance.backgroundColor = .white
+           let proxy = UINavigationBar.appearance()
+           proxy.tintColor = .black
+           proxy.standardAppearance = appearance
+           proxy.scrollEdgeAppearance = appearance
+        
+//        do {
+//            try Auth.auth().signOut()
+//            print("success logout")
+//        } catch {
+//            print("error logiut")
+//        }
+        
+        
         return true
     }
 
