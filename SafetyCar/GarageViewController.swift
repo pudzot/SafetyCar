@@ -14,11 +14,14 @@ final class GarageViewController: UIViewController, GarageViewType {
         tableView.reloadData()
     }
     
+    var delegate: GarageNavigationDelegate?
+    
     var cars = [Car]()
     private let presenter: GaragePresenter
     
-    init(presenter: GaragePresenter) {
+    init(presenter: GaragePresenter, delegate: GarageNavigationDelegate) {
         self.presenter = presenter
+        self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -86,9 +89,8 @@ extension GarageViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let car = cars[indexPath.row]
-        print(car.carID)
-       
-        //self.dismiss(animated: true)
+        delegate?.didSelectCar(id: car.carID)
+        self.dismiss(animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

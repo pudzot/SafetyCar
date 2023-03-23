@@ -18,6 +18,7 @@
 		1B07B47429C1E7E000EB4B3F /* FuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47329C1E7E000EB4B3F /* FuelViewController.swift */; };
 		1B07B47629C389AE00EB4B3F /* FuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47529C389AE00EB4B3F /* FuelTableViewCell.swift */; };
 		1B102FDD29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */; };
+		1B151FC929CC88C600BCE182 /* GarageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B151FC829CC88C600BCE182 /* GarageContentViewController.swift */; };
 		1B1B86A429CB993800A8E10F /* GarageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */; };
 		1B4B5EFA29BDD708006E60AB /* CarCurrentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B5EF929BDD708006E60AB /* CarCurrentPresenter.swift */; };
 		1B7AF76429C5A31F00BB6377 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7AF76329C5A31F00BB6377 /* FirebaseAnalytics */; };
@@ -80,6 +81,7 @@
 		1B07B47329C1E7E000EB4B3F /* FuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewController.swift; sourceTree = "<group>"; };
 		1B07B47529C389AE00EB4B3F /* FuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTableViewCell.swift; sourceTree = "<group>"; };
 		1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B151FC829CC88C600BCE182 /* GarageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageContentViewController.swift; sourceTree = "<group>"; };
 		1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTableViewCell.swift; sourceTree = "<group>"; };
 		1B4B5EF929BDD708006E60AB /* CarCurrentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentPresenter.swift; sourceTree = "<group>"; };
 		1B7AF76B29C5A8CE00BB6377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				1B8887E329C8ABA800F12012 /* GarageCoordinator.swift */,
 				1B8887E529C8AD4500F12012 /* GaragePresenter.swift */,
 				1B8887E729C8AF2600F12012 /* GarageViewController.swift */,
+				1B151FC829CC88C600BCE182 /* GarageContentViewController.swift */,
 				1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */,
 				1B8887E229C8AB5100F12012 /* FuelConsumption */,
 				1BDC782929BCBFD100F93927 /* Car */,
@@ -496,6 +499,7 @@
 				1BAED5F829C84029001F54EF /* UserService.swift in Sources */,
 				1B8887E629C8AD4500F12012 /* GaragePresenter.swift in Sources */,
 				1BDC782D29BCD10D00F93927 /* CarCurrentHeaderView.swift in Sources */,
+				1B151FC929CC88C600BCE182 /* GarageContentViewController.swift in Sources */,
 				1BFF13AE29B692C8001F28C0 /* AppCoordinator.swift in Sources */,
 				1B93E7D329B6332E00212F48 /* UIViewController+Extensions.swift in Sources */,
 				1B7AF77729C5C0E500BB6377 /* User.swift in Sources */,

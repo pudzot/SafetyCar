@@ -8,6 +8,10 @@
 import Foundation
 import FirebaseAuth
 
+protocol GarageNavigationDelegate: AnyObject {
+    func didSelectCar(id: String)
+}
+
 protocol GarageViewType: AnyObject {
     
     func display(items: [Car])

@@ -9,9 +9,8 @@ import UIKit
 
 class CarCurrentCoordinator: NewCoordinator {
     
-   
-    private lazy var viewController: UIViewController = {
-        let presenter = CarCurrentPresenter(navigationDelegate: self)
+    private lazy var presenter = CarCurrentPresenter(navigationDelegate: self)
+    private lazy var viewController: CarCurrentViewController = {
         return CarCurrentViewController(presenter: presenter)
     }()
     
@@ -27,6 +26,11 @@ extension CarCurrentCoordinator: CarCurrentNavigationDelegate {
         let navigationController = NavigationController()
         let router = Router(navigationController: navigationController)
         let coordinator = GarageCoordinator(router: router)
+       
+        coordinator.didSelect = { [weak self] (id) in
+            self!.presenter.selectedCarID = id
+        }
+        
         addChild(coordinator)
         self.router.present(coordinator, animated: true)
 //        router.push(coordinator, animated: true) { [weak self, weak coordinator] in
