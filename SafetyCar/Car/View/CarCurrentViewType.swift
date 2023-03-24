@@ -9,6 +9,6 @@ import Foundation
 
 protocol CarCurrentViewType: AnyObject {
     
-    func display(vehicleItems: [VehicleCell], model: Car)
+    func display(dataSource: CarCurrentDataSource)
     
 }

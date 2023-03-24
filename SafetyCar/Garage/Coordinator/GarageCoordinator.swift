@@ -12,8 +12,8 @@ final class GarageCoordinator: NewCoordinator {
     var didSelect: ((String) -> Void)?
     
     private lazy var viewController: UIViewController = {
-        let presenter = GaragePresenter()
-        return GarageViewController(presenter: presenter, delegate: self)
+        let presenter = GaragePresenter(navigationDelegate: self)
+        return GarageViewController(presenter: presenter)
     }()
     
     override init(router: RouterType) {
@@ -23,8 +23,8 @@ final class GarageCoordinator: NewCoordinator {
 }
 
 extension GarageCoordinator: GarageNavigationDelegate {
-    
-    func didSelectCar(id: String) {
+    func openSelectedCar(id: String) {
+        print("przekazane ID \(id)")
         self.didSelect?(id)
     }
 }

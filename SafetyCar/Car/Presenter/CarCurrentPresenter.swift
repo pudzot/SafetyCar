@@ -38,8 +38,9 @@ extension CarCurrentPresenter: CarCurrentPresenterType {
         var items = [VehicleCell]()
         items.append(VehicleCell(image: "mercedes", elements: .lock))
         items.append(VehicleCell(image: "lesson_placeholder", elements: .fuel))
-                     
-        self.view?.display(vehicleItems: items, model: model)
+        let dataSource = CarCurrentDataSource(vehicleItems: items, car: model)
+        
+        self.view?.display(dataSource: dataSource)
     }
     
     func fetchCars() {

@@ -17,8 +17,11 @@
 		1B07B47229C1E7CD00EB4B3F /* FuelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47129C1E7CD00EB4B3F /* FuelPresenter.swift */; };
 		1B07B47429C1E7E000EB4B3F /* FuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47329C1E7E000EB4B3F /* FuelViewController.swift */; };
 		1B07B47629C389AE00EB4B3F /* FuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07B47529C389AE00EB4B3F /* FuelTableViewCell.swift */; };
+		1B0C230B29CD7E9600BAA9F9 /* GaragePresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C230A29CD7E9600BAA9F9 /* GaragePresenterType.swift */; };
+		1B0C230D29CD7EED00BAA9F9 /* GarageViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C230C29CD7EED00BAA9F9 /* GarageViewType.swift */; };
 		1B102FDD29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */; };
 		1B151FC929CC88C600BCE182 /* GarageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B151FC829CC88C600BCE182 /* GarageContentViewController.swift */; };
+		1B151FCD29CC95C200BCE182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B151FCC29CC95C200BCE182 /* ViewController.swift */; };
 		1B1B86A429CB993800A8E10F /* GarageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */; };
 		1B4B5EFA29BDD708006E60AB /* CarCurrentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B5EF929BDD708006E60AB /* CarCurrentPresenter.swift */; };
 		1B7AF76429C5A31F00BB6377 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7AF76329C5A31F00BB6377 /* FirebaseAnalytics */; };
@@ -31,6 +34,7 @@
 		1B7AF77529C5BE0600BB6377 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7AF77429C5BE0600BB6377 /* Car.swift */; };
 		1B7AF77729C5C0E500BB6377 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7AF77629C5C0E500BB6377 /* User.swift */; };
 		1B7D2D8C29C1AB190072DA6E /* VehicleAccessModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D2D8B29C1AB190072DA6E /* VehicleAccessModelItem.swift */; };
+		1B7DF72129CD84A900D82B5A /* TPCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 1B7DF72029CD84A900D82B5A /* TPCommon */; };
 		1B8887E429C8ABA800F12012 /* GarageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8887E329C8ABA800F12012 /* GarageCoordinator.swift */; };
 		1B8887E629C8AD4500F12012 /* GaragePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8887E529C8AD4500F12012 /* GaragePresenter.swift */; };
 		1B8887E829C8AF2600F12012 /* GarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8887E729C8AF2600F12012 /* GarageViewController.swift */; };
@@ -48,6 +52,10 @@
 		1B93E7D129B626A000212F48 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7D029B626A000212F48 /* LocationService.swift */; };
 		1B93E7D329B6332E00212F48 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93E7D229B6332E00212F48 /* UIViewController+Extensions.swift */; };
 		1BAED5F829C84029001F54EF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAED5F729C84029001F54EF /* UserService.swift */; };
+		1BD814D729CCC1E60007BCBD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD814D629CCC1E60007BCBD /* BaseViewController.swift */; };
+		1BD814D929CCC27B0007BCBD /* GarageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD814D829CCC27B0007BCBD /* GarageView.swift */; };
+		1BD814DD29CCD87C0007BCBD /* CarCurrentContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD814DC29CCD87C0007BCBD /* CarCurrentContentViewController.swift */; };
+		1BD814DF29CCDA790007BCBD /* CarCurrentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD814DE29CCDA790007BCBD /* CarCurrentDataSource.swift */; };
 		1BDC781829BB381A00F93927 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC781729BB381A00F93927 /* WelcomeView.swift */; };
 		1BDC781A29BB3F1C00F93927 /* 38435-register.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BDC781929BB3F1C00F93927 /* 38435-register.json */; };
 		1BDC782429BCB03A00F93927 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC782329BCB03A00F93927 /* TabBarController.swift */; };
@@ -80,8 +88,54 @@
 		1B07B47129C1E7CD00EB4B3F /* FuelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelPresenter.swift; sourceTree = "<group>"; };
 		1B07B47329C1E7E000EB4B3F /* FuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewController.swift; sourceTree = "<group>"; };
 		1B07B47529C389AE00EB4B3F /* FuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTableViewCell.swift; sourceTree = "<group>"; };
+		1B0C230A29CD7E9600BAA9F9 /* GaragePresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragePresenterType.swift; sourceTree = "<group>"; };
+		1B0C230C29CD7EED00BAA9F9 /* GarageViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageViewType.swift; sourceTree = "<group>"; };
 		1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B151FC829CC88C600BCE182 /* GarageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageContentViewController.swift; sourceTree = "<group>"; };
+		1B151FCC29CC95C200BCE182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B151FD029CC96A000BCE182 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		1B151FD129CC96A000BCE182 /* ContentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateViewController.swift; sourceTree = "<group>"; };
+		1B151FD229CC96A000BCE182 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		1B151FD429CC96A000BCE182 /* UIApplication+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Utils.swift"; sourceTree = "<group>"; };
+		1B151FD629CC96A000BCE182 /* UIView+ExportImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ExportImage.swift"; sourceTree = "<group>"; };
+		1B151FD729CC96A000BCE182 /* UIView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		1B151FD829CC96A000BCE182 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		1B151FD929CC96A000BCE182 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1B151FDA29CC96A000BCE182 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		1B151FDC29CC96A000BCE182 /* UICollectionView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utils.swift"; sourceTree = "<group>"; };
+		1B151FDE29CC96A000BCE182 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1B151FE029CC96A000BCE182 /* UITableView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
+		1B151FE129CC96A000BCE182 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		1B151FE229CC96A000BCE182 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		1B151FE429CC96A000BCE182 /* CustomViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewType.swift; sourceTree = "<group>"; };
+		1B151FE529CC96A000BCE182 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		1B151FE629CC96A000BCE182 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		1B151FE929CC96A000BCE182 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		1B151FEA29CC96A000BCE182 /* Label+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Functions.swift"; sourceTree = "<group>"; };
+		1B151FEC29CC96A000BCE182 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1B151FEE29CC96A000BCE182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B151FF129CC96C900BCE182 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		1B151FF229CC96C900BCE182 /* ContentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateViewController.swift; sourceTree = "<group>"; };
+		1B151FF329CC96C900BCE182 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		1B151FF529CC96C900BCE182 /* UIApplication+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Utils.swift"; sourceTree = "<group>"; };
+		1B151FF729CC96C900BCE182 /* UIView+ExportImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ExportImage.swift"; sourceTree = "<group>"; };
+		1B151FF829CC96C900BCE182 /* UIView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		1B151FF929CC96C900BCE182 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		1B151FFA29CC96C900BCE182 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1B151FFB29CC96C900BCE182 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		1B151FFD29CC96C900BCE182 /* UICollectionView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utils.swift"; sourceTree = "<group>"; };
+		1B151FFF29CC96C900BCE182 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1B15200129CC96C900BCE182 /* UITableView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
+		1B15200229CC96C900BCE182 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		1B15200329CC96C900BCE182 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		1B15200529CC96C900BCE182 /* CustomViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewType.swift; sourceTree = "<group>"; };
+		1B15200629CC96C900BCE182 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		1B15200729CC96C900BCE182 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		1B15200A29CC96C900BCE182 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		1B15200B29CC96C900BCE182 /* Label+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Functions.swift"; sourceTree = "<group>"; };
+		1B15200D29CC96C900BCE182 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1B15200F29CC96C900BCE182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B15201029CC973D00BCE182 /* TPOnboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TPOnboarding; path = "../../../Library/Developer/Xcode/DerivedData/Marketplace-efgrostggzwusvhicwochilqczpa/SourcePackages/checkouts/TPOnboarding"; sourceTree = "<group>"; };
 		1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTableViewCell.swift; sourceTree = "<group>"; };
 		1B4B5EF929BDD708006E60AB /* CarCurrentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentPresenter.swift; sourceTree = "<group>"; };
 		1B7AF76B29C5A8CE00BB6377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -109,6 +163,10 @@
 		1B93E7D029B626A000212F48 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		1B93E7D229B6332E00212F48 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1BAED5F729C84029001F54EF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		1BD814D629CCC1E60007BCBD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1BD814D829CCC27B0007BCBD /* GarageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageView.swift; sourceTree = "<group>"; };
+		1BD814DC29CCD87C0007BCBD /* CarCurrentContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentContentViewController.swift; sourceTree = "<group>"; };
+		1BD814DE29CCDA790007BCBD /* CarCurrentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCurrentDataSource.swift; sourceTree = "<group>"; };
 		1BDC781729BB381A00F93927 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		1BDC781929BB3F1C00F93927 /* 38435-register.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38435-register.json"; sourceTree = "<group>"; };
 		1BDC782329BCB03A00F93927 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -140,6 +198,7 @@
 				1B7AF76A29C5A31F00BB6377 /* FirebaseDatabase in Frameworks */,
 				1B7AF76629C5A31F00BB6377 /* FirebaseAnalyticsSwift in Frameworks */,
 				1B7AF76429C5A31F00BB6377 /* FirebaseAnalytics in Frameworks */,
+				1B7DF72129CD84A900D82B5A /* TPCommon in Frameworks */,
 				F330FA1657001C23CDEF6906 /* Pods_SafetyCar.framework in Frameworks */,
 				1B7AF76829C5A31F00BB6377 /* FirebaseAuth in Frameworks */,
 			);
@@ -183,8 +242,324 @@
 				1BDC782A29BCC9D100F93927 /* CarCurrentViewController.swift */,
 				1B07B46D29C1D30E00EB4B3F /* CarCurrentViewType.swift */,
 				1B102FDC29BDE6CE00D1423D /* CarCurrentCollectionViewCell.swift */,
+				1BD814DC29CCD87C0007BCBD /* CarCurrentContentViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1B0C230929CD77BB00BAA9F9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1BD814DE29CCDA790007BCBD /* CarCurrentDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		1B0C230E29CD7F4900BAA9F9 /* Garage */ = {
+			isa = PBXGroup;
+			children = (
+				1B0C230F29CD7F6F00BAA9F9 /* Coordinator */,
+				1B0C231029CD7F7B00BAA9F9 /* Presenter */,
+				1B0C231129CD7FE700BAA9F9 /* View */,
+			);
+			path = Garage;
+			sourceTree = "<group>";
+		};
+		1B0C230F29CD7F6F00BAA9F9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1B8887E329C8ABA800F12012 /* GarageCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1B0C231029CD7F7B00BAA9F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1B8887E529C8AD4500F12012 /* GaragePresenter.swift */,
+				1B0C230A29CD7E9600BAA9F9 /* GaragePresenterType.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1B0C231129CD7FE700BAA9F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B0C231229CD801E00BAA9F9 /* Cells */,
+				1BD814D829CCC27B0007BCBD /* GarageView.swift */,
+				1B0C230C29CD7EED00BAA9F9 /* GarageViewType.swift */,
+				1B8887E729C8AF2600F12012 /* GarageViewController.swift */,
+				1B151FC829CC88C600BCE182 /* GarageContentViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B0C231229CD801E00BAA9F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1B0C231329CD809D00BAA9F9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1BDC782529BCB12900F93927 /* TabBarCoordinator.swift */,
+				1BDC782329BCB03A00F93927 /* TabBarController.swift */,
+				1BD814D629CCC1E60007BCBD /* BaseViewController.swift */,
+				1BFF13A329B68DB4001F28C0 /* NavigationController.swift */,
+				1BFF13A529B68E9A001F28C0 /* Router.swift */,
+				1BFF13A729B68EED001F28C0 /* Presentable.swift */,
+				1BFF13A929B68F9B001F28C0 /* Coordinator.swift */,
+				1BFF13AB29B691A7001F28C0 /* Store.swift */,
+				1BFF13AD29B692C8001F28C0 /* AppCoordinator.swift */,
+				1B151FCC29CC95C200BCE182 /* ViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1B0C231429CD80C000BAA9F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B7AF77629C5C0E500BB6377 /* User.swift */,
+				1B7AF77429C5BE0600BB6377 /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B151FCE29CC96A000BCE182 /* TPCommon */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FCF29CC96A000BCE182 /* ContentStateViewController */,
+				1B151FD329CC96A000BCE182 /* UIApplication */,
+				1B151FD529CC96A000BCE182 /* UIView */,
+				1B151FD829CC96A000BCE182 /* Dynamic.swift */,
+				1B151FD929CC96A000BCE182 /* UIColor+Extensions.swift */,
+				1B151FDA29CC96A000BCE182 /* DoublyLinkedList.swift */,
+				1B151FDB29CC96A000BCE182 /* UICollectionView */,
+				1B151FDD29CC96A000BCE182 /* UIViewController */,
+				1B151FDF29CC96A000BCE182 /* UITableView */,
+				1B151FE129CC96A000BCE182 /* TimeInterval+Extensions.swift */,
+				1B151FE229CC96A000BCE182 /* Bundle+Extensions.swift */,
+				1B151FE329CC96A000BCE182 /* Protocols */,
+				1B151FE629CC96A000BCE182 /* String+Utils.swift */,
+				1B151FE729CC96A000BCE182 /* Base */,
+			);
+			name = TPCommon;
+			path = "../../../Library/Developer/Xcode/DerivedData/Marketplace-efgrostggzwusvhicwochilqczpa/SourcePackages/checkouts/TPCommon/Sources/TPCommon";
+			sourceTree = "<group>";
+		};
+		1B151FCF29CC96A000BCE182 /* ContentStateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FD029CC96A000BCE182 /* ErrorViewController.swift */,
+				1B151FD129CC96A000BCE182 /* ContentStateViewController.swift */,
+				1B151FD229CC96A000BCE182 /* LoadingViewController.swift */,
+			);
+			path = ContentStateViewController;
+			sourceTree = "<group>";
+		};
+		1B151FD329CC96A000BCE182 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FD429CC96A000BCE182 /* UIApplication+Utils.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		1B151FD529CC96A000BCE182 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FD629CC96A000BCE182 /* UIView+ExportImage.swift */,
+				1B151FD729CC96A000BCE182 /* UIView+Subviews.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		1B151FDB29CC96A000BCE182 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FDC29CC96A000BCE182 /* UICollectionView+Utils.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		1B151FDD29CC96A000BCE182 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FDE29CC96A000BCE182 /* UIViewController+Extensions.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		1B151FDF29CC96A000BCE182 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FE029CC96A000BCE182 /* UITableView+Utils.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		1B151FE329CC96A000BCE182 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FE429CC96A000BCE182 /* CustomViewType.swift */,
+				1B151FE529CC96A000BCE182 /* Reusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1B151FE729CC96A000BCE182 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FE829CC96A000BCE182 /* Label */,
+				1B151FEB29CC96A000BCE182 /* View */,
+				1B151FED29CC96A000BCE182 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1B151FE829CC96A000BCE182 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FE929CC96A000BCE182 /* Label.swift */,
+				1B151FEA29CC96A000BCE182 /* Label+Functions.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		1B151FEB29CC96A000BCE182 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FEC29CC96A000BCE182 /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B151FED29CC96A000BCE182 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FEE29CC96A000BCE182 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1B151FEF29CC96C900BCE182 /* TPCommon */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FF029CC96C900BCE182 /* ContentStateViewController */,
+				1B151FF429CC96C900BCE182 /* UIApplication */,
+				1B151FF629CC96C900BCE182 /* UIView */,
+				1B151FF929CC96C900BCE182 /* Dynamic.swift */,
+				1B151FFA29CC96C900BCE182 /* UIColor+Extensions.swift */,
+				1B151FFB29CC96C900BCE182 /* DoublyLinkedList.swift */,
+				1B151FFC29CC96C900BCE182 /* UICollectionView */,
+				1B151FFE29CC96C900BCE182 /* UIViewController */,
+				1B15200029CC96C900BCE182 /* UITableView */,
+				1B15200229CC96C900BCE182 /* TimeInterval+Extensions.swift */,
+				1B15200329CC96C900BCE182 /* Bundle+Extensions.swift */,
+				1B15200429CC96C900BCE182 /* Protocols */,
+				1B15200729CC96C900BCE182 /* String+Utils.swift */,
+				1B15200829CC96C900BCE182 /* Base */,
+			);
+			name = TPCommon;
+			path = "../../../Library/Developer/Xcode/DerivedData/Marketplace-efgrostggzwusvhicwochilqczpa/SourcePackages/checkouts/TPCommon/Sources/TPCommon";
+			sourceTree = "<group>";
+		};
+		1B151FF029CC96C900BCE182 /* ContentStateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FF129CC96C900BCE182 /* ErrorViewController.swift */,
+				1B151FF229CC96C900BCE182 /* ContentStateViewController.swift */,
+				1B151FF329CC96C900BCE182 /* LoadingViewController.swift */,
+			);
+			path = ContentStateViewController;
+			sourceTree = "<group>";
+		};
+		1B151FF429CC96C900BCE182 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FF529CC96C900BCE182 /* UIApplication+Utils.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		1B151FF629CC96C900BCE182 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FF729CC96C900BCE182 /* UIView+ExportImage.swift */,
+				1B151FF829CC96C900BCE182 /* UIView+Subviews.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		1B151FFC29CC96C900BCE182 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FFD29CC96C900BCE182 /* UICollectionView+Utils.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		1B151FFE29CC96C900BCE182 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B151FFF29CC96C900BCE182 /* UIViewController+Extensions.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		1B15200029CC96C900BCE182 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				1B15200129CC96C900BCE182 /* UITableView+Utils.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		1B15200429CC96C900BCE182 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1B15200529CC96C900BCE182 /* CustomViewType.swift */,
+				1B15200629CC96C900BCE182 /* Reusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1B15200829CC96C900BCE182 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1B15200929CC96C900BCE182 /* Label */,
+				1B15200C29CC96C900BCE182 /* View */,
+				1B15200E29CC96C900BCE182 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1B15200929CC96C900BCE182 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				1B15200A29CC96C900BCE182 /* Label.swift */,
+				1B15200B29CC96C900BCE182 /* Label+Functions.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		1B15200C29CC96C900BCE182 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B15200D29CC96C900BCE182 /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B15200E29CC96C900BCE182 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B15200F29CC96C900BCE182 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		1B7AF76F29C5ADDD00BB6377 /* Networking */ = {
@@ -255,21 +630,13 @@
 			children = (
 				1B93E7AF29B6217200212F48 /* AppDelegate.swift */,
 				1B93E7B129B6217200212F48 /* SceneDelegate.swift */,
-				1B7AF77629C5C0E500BB6377 /* User.swift */,
-				1B7AF77429C5BE0600BB6377 /* Car.swift */,
+				1B0C231429CD80C000BAA9F9 /* Models */,
 				1B7AF76F29C5ADDD00BB6377 /* Networking */,
 				1BDC782229BB8D4A00F93927 /* Welcome */,
 				1BFF13A229B68D89001F28C0 /* NotificationService */,
-				1B93E7C529B622B500212F48 /* Constants.swift */,
 				1B93E7CE29B625BB00212F48 /* UNNotificationSoundName+Extensions.swift */,
 				1B93E7D229B6332E00212F48 /* UIViewController+Extensions.swift */,
-				1BDC782329BCB03A00F93927 /* TabBarController.swift */,
-				1BDC782529BCB12900F93927 /* TabBarCoordinator.swift */,
-				1B8887E329C8ABA800F12012 /* GarageCoordinator.swift */,
-				1B8887E529C8AD4500F12012 /* GaragePresenter.swift */,
-				1B8887E729C8AF2600F12012 /* GarageViewController.swift */,
-				1B151FC829CC88C600BCE182 /* GarageContentViewController.swift */,
-				1B1B86A329CB993800A8E10F /* GarageTableViewCell.swift */,
+				1B0C230E29CD7F4900BAA9F9 /* Garage */,
 				1B8887E229C8AB5100F12012 /* FuelConsumption */,
 				1BDC782929BCBFD100F93927 /* Car */,
 				1B030DF329C12A6800FC9A57 /* Service */,
@@ -281,13 +648,9 @@
 				1BFF139B29B63EAC001F28C0 /* Home.gpx */,
 				1BFF139C29B63EAC001F28C0 /* Park.gpx */,
 				1BFF139D29B63EAC001F28C0 /* SimulatedLocations.gpx */,
-				1BFF13A329B68DB4001F28C0 /* NavigationController.swift */,
-				1BFF13A529B68E9A001F28C0 /* Router.swift */,
-				1BFF13A729B68EED001F28C0 /* Presentable.swift */,
-				1BFF13A929B68F9B001F28C0 /* Coordinator.swift */,
-				1BFF13AB29B691A7001F28C0 /* Store.swift */,
-				1BFF13AD29B692C8001F28C0 /* AppCoordinator.swift */,
+				1B0C231329CD809D00BAA9F9 /* Common */,
 				1B07B46929C1D00800EB4B3F /* Extension.swift */,
+				1B93E7C529B622B500212F48 /* Constants.swift */,
 				1BDC781929BB3F1C00F93927 /* 38435-register.json */,
 			);
 			path = SafetyCar;
@@ -317,6 +680,7 @@
 		1BDC782929BCBFD100F93927 /* Car */ = {
 			isa = PBXGroup;
 			children = (
+				1B0C230929CD77BB00BAA9F9 /* DataSource */,
 				1B07B46629C1CEAB00EB4B3F /* Coordinator */,
 				1B07B46729C1CEC100EB4B3F /* Presenter */,
 				1B07B46829C1CEDA00EB4B3F /* View */,
@@ -345,6 +709,9 @@
 		EF71F8AD4175C4976337CDDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B15201029CC973D00BCE182 /* TPOnboarding */,
+				1B151FCE29CC96A000BCE182 /* TPCommon */,
+				1B151FEF29CC96C900BCE182 /* TPCommon */,
 				E811C15455B9C31BF82E7DB1 /* Pods_SafetyCar.framework */,
 			);
 			name = Frameworks;
@@ -373,6 +740,7 @@
 				1B7AF76529C5A31F00BB6377 /* FirebaseAnalyticsSwift */,
 				1B7AF76729C5A31F00BB6377 /* FirebaseAuth */,
 				1B7AF76929C5A31F00BB6377 /* FirebaseDatabase */,
+				1B7DF72029CD84A900D82B5A /* TPCommon */,
 			);
 			productName = SafetyCar;
 			productReference = 1B93E7AC29B6217200212F48 /* SafetyCar.app */;
@@ -491,12 +859,17 @@
 				1B93E7C429B6222900212F48 /* NotificationService.swift in Sources */,
 				1B07B46A29C1D00800EB4B3F /* Extension.swift in Sources */,
 				1B030DF529C12A9A00FC9A57 /* CarServiceCoordinator.swift in Sources */,
+				1BD814DF29CCDA790007BCBD /* CarCurrentDataSource.swift in Sources */,
 				1BDC782829BCBA4F00F93927 /* CarCurrentCoordinator.swift in Sources */,
 				1B93E7CF29B625BB00212F48 /* UNNotificationSoundName+Extensions.swift in Sources */,
+				1B0C230B29CD7E9600BAA9F9 /* GaragePresenterType.swift in Sources */,
 				1B07B46C29C1D27400EB4B3F /* CarCurrentPresenterType.swift in Sources */,
+				1BD814D729CCC1E60007BCBD /* BaseViewController.swift in Sources */,
+				1BD814D929CCC27B0007BCBD /* GarageView.swift in Sources */,
 				1BE68A5729B91C3E00172CED /* WelcomePresenter.swift in Sources */,
 				1BFF13A429B68DB4001F28C0 /* NavigationController.swift in Sources */,
 				1BAED5F829C84029001F54EF /* UserService.swift in Sources */,
+				1B0C230D29CD7EED00BAA9F9 /* GarageViewType.swift in Sources */,
 				1B8887E629C8AD4500F12012 /* GaragePresenter.swift in Sources */,
 				1BDC782D29BCD10D00F93927 /* CarCurrentHeaderView.swift in Sources */,
 				1B151FC929CC88C600BCE182 /* GarageContentViewController.swift in Sources */,
@@ -510,8 +883,10 @@
 				1BDC782429BCB03A00F93927 /* TabBarController.swift in Sources */,
 				1B4B5EFA29BDD708006E60AB /* CarCurrentPresenter.swift in Sources */,
 				1B8887E429C8ABA800F12012 /* GarageCoordinator.swift in Sources */,
+				1BD814DD29CCD87C0007BCBD /* CarCurrentContentViewController.swift in Sources */,
 				1B030DF729C12AAD00FC9A57 /* CarServicePresenter.swift in Sources */,
 				1BFF13AA29B68F9B001F28C0 /* Coordinator.swift in Sources */,
+				1B151FCD29CC95C200BCE182 /* ViewController.swift in Sources */,
 				1B07B47029C1E70800EB4B3F /* FuelCoordinator.swift in Sources */,
 				1B07B47429C1E7E000EB4B3F /* FuelViewController.swift in Sources */,
 				1BDC781829BB381A00F93927 /* WelcomeView.swift in Sources */,
@@ -776,6 +1151,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1B8BAEF929C4FD2200AC3FAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		1B7DF72029CD84A900D82B5A /* TPCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TPCommon;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

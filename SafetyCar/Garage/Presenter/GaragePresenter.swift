@@ -8,31 +8,31 @@
 import Foundation
 import FirebaseAuth
 
-protocol GarageNavigationDelegate: AnyObject {
-    func didSelectCar(id: String)
-}
 
-protocol GarageViewType: AnyObject {
-    
-    func display(items: [Car])
 
-}
 
-protocol GaragePresenterType: AnyObject {
-    
-    func attach(_ view: GarageViewType)
-    
-}
 
 final class GaragePresenter {
     
     private weak var view: GarageViewType?
     
+    private weak var navigationDelegate: GarageNavigationDelegate?
+    
+    init(navigationDelegate: GarageNavigationDelegate) {
+        self.navigationDelegate = navigationDelegate
+    }
+    
     private let carService = CarsService()
-
+    
+    private var cars = [Car]()
 }
 
 extension GaragePresenter: GaragePresenterType {
+   
+    func presentSelectedCar(id: String) {
+        navigationDelegate?.openSelectedCar(id: id)
+    }
+    
     
     func attach(_ view: GarageViewType) {
         self.view = view

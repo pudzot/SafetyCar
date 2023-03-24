@@ -28,6 +28,7 @@ extension CarCurrentCoordinator: CarCurrentNavigationDelegate {
         let coordinator = GarageCoordinator(router: router)
        
         coordinator.didSelect = { [weak self] (id) in
+            print(id)
             self!.presenter.selectedCarID = id
         }
         
