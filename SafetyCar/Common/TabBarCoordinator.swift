@@ -43,6 +43,7 @@ class TabBarCoordinator: NewCoordinator {
         let router = Router(navigationController: navigationController)
         let coordinator = CarCurrentCoordinator(router: router)
         //coordinator.router.setNavigationBarHidden(isHidden: true)
+        
         return coordinator
     }
     

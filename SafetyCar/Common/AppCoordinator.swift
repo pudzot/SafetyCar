@@ -49,6 +49,7 @@ class AppCoordinator: NewCoordinator {
     private func presentMainFlow() {
         print("ZALOGOWANO tab bar ")
         let coordinator = TabBarCoordinator(router: router, store: store)
+        
         addChild(coordinator)
         coordinator.start()
     }

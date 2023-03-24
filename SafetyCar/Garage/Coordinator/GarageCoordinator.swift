@@ -16,9 +16,13 @@ final class GarageCoordinator: NewCoordinator {
         return GarageViewController(presenter: presenter)
     }()
     
+    public override func toPresentable() -> UIViewController {
+        return viewController
+    }
+    
     override init(router: RouterType) {
         super.init(router: router)
-        router.setRootModule(viewController, hideBar: false)
+       // router.setRootModule(viewController, hideBar: false)
     }
 }
 

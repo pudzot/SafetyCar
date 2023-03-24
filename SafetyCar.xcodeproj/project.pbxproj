@@ -596,6 +596,37 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1B7DF72329CDC63400D82B5A /* AddCar */ = {
+			isa = PBXGroup;
+			children = (
+				1B7DF72529CDC66A00D82B5A /* Coordinator */,
+				1B7DF72629CDC67B00D82B5A /* Presenter */,
+				1B7DF72729CDC69600D82B5A /* View */,
+			);
+			path = AddCar;
+			sourceTree = "<group>";
+		};
+		1B7DF72529CDC66A00D82B5A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1B7DF72629CDC67B00D82B5A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1B7DF72729CDC69600D82B5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1B8887E229C8AB5100F12012 /* FuelConsumption */ = {
 			isa = PBXGroup;
 			children = (
@@ -639,6 +670,7 @@
 				1B0C230E29CD7F4900BAA9F9 /* Garage */,
 				1B8887E229C8AB5100F12012 /* FuelConsumption */,
 				1BDC782929BCBFD100F93927 /* Car */,
+				1B7DF72329CDC63400D82B5A /* AddCar */,
 				1B030DF329C12A6800FC9A57 /* Service */,
 				1B93E7C729B624ED00212F48 /* Sounds */,
 				1B93E7B829B6217400212F48 /* Assets.xcassets */,

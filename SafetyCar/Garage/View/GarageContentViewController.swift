@@ -59,7 +59,7 @@ extension GarageContentViewController: UITableViewDataSource, UITableViewDelegat
         tableView.deselectRow(at: indexPath, animated: true)
         let car = cars[indexPath.row]
         output?.didSelectCar(id: car.carID)
-        self.dismiss(animated: true)
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

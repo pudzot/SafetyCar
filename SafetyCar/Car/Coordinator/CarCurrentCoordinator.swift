@@ -23,20 +23,21 @@ class CarCurrentCoordinator: NewCoordinator {
 extension CarCurrentCoordinator: CarCurrentNavigationDelegate {
    
     func openGarage() {
-        let navigationController = NavigationController()
-        let router = Router(navigationController: navigationController)
+//        let navigationController = NavigationController()
+//        let router = Router(navigationController: navigationController)
         let coordinator = GarageCoordinator(router: router)
        
-        coordinator.didSelect = { [weak self] (id) in
-            print(id)
-            self!.presenter.selectedCarID = id
+        coordinator.didSelect = { [weak self, weak coordinator] IDCar  in
+            print(IDCar)
+            self!.presenter.selectedCarID = IDCar
+            self?.removeChild(coordinator)
+            self?.router.popToRootModule(animated: true)
         }
         
         addChild(coordinator)
-        self.router.present(coordinator, animated: true)
-//        router.push(coordinator, animated: true) { [weak self, weak coordinator] in
-//            self?.removeChild(coordinator)
-//        }
+        router.push(coordinator, animated: true) { [weak self, weak coordinator] in
+            self?.removeChild(coordinator)
+        }
     }
     
    
