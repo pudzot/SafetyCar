@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Proszę o dostęp do aparatu</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Proszę o dostęp do biblioteki</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>give me permission</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

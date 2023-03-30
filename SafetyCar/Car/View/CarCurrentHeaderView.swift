@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class CarCurrentHeaderView: UICollectionReusableView {
     
@@ -68,6 +69,8 @@ final class CarCurrentHeaderView: UICollectionReusableView {
     }
     
     func configure(model: Car) {
+        let url = URL(string: model.profileCarImage)
+        self.carBackground.kf.setImage(with: url)
         self.nameLabel.text = "\(model.brand)  \(model.model)"
         self.odoLabel.text = "\(model.odometer) km"
     }

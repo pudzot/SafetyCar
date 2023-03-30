@@ -89,7 +89,6 @@ extension CarCurrentContentViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = dataSource.vehicleItems[indexPath.row]
         let carID = dataSource.car.carID
-       print(carID)
         self.output?.didSelect(carID: carID, vehicleCell: item)
    }
 }

@@ -6,20 +6,19 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GarageTableViewCell: UITableViewCell {
 
     static let identifier = "GarageTableViewCell"
     
-    
-      
     private let nameLabel: UILabel = {
           let label = UILabel()
           label.numberOfLines = 1
           return label
       }()
       
-      private let imgView: UIImageView = {
+      private let carBackground: UIImageView = {
           let image = UIImage(named: "mercedes")
           let imageView = UIImageView(image: image)
           imageView.contentMode = .scaleAspectFill
@@ -38,7 +37,7 @@ class GarageTableViewCell: UITableViewCell {
       
       override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
           super.init(style: style, reuseIdentifier: reuseIdentifier)
-          contentView.addSubview(imgView)
+          contentView.addSubview(carBackground)
           contentView.addSubview(blurView)
           contentView.addSubview(nameLabel)
           contentView.clipsToBounds = true
@@ -52,10 +51,10 @@ class GarageTableViewCell: UITableViewCell {
           super.layoutSubviews()
           blurView.snp.makeConstraints { make in
               make.height.equalTo(50)
-              make.leading.trailing.bottom.equalTo(imgView)
+              make.leading.trailing.bottom.equalTo(carBackground)
           }
           
-          self.imgView.snp.makeConstraints { make in
+          self.carBackground.snp.makeConstraints { make in
               make.top.equalTo(16)
               make.leading.equalTo(16)
               make.trailing.equalTo(-16)
@@ -71,8 +70,9 @@ class GarageTableViewCell: UITableViewCell {
       }
       
       func configure(with model: Car) {
-          nameLabel.text = "\(model.brand) \(model.model)"
-         // imgView.sd_setImage(with: viewmodel.imageURL, completed: nil)
+          let url = URL(string: model.profileCarImage)
+          self.carBackground.kf.setImage(with: url)
+          nameLabel.text = "\(model.brand) \(model.model) \(model.year) \(model.odometer) \(model.fuelType) "
       }
 
 }

@@ -31,4 +31,18 @@ extension GarageCoordinator: GarageNavigationDelegate {
         print("przekazane ID \(id)")
         self.didSelect?(id)
     }
+    
+    func openAddCar() {
+        let navigationController = NavigationController()
+        let router = Router(navigationController: navigationController)
+        let coordinator = AddCarCoordinator(router: router)
+        
+        addChild(coordinator)
+        
+        coordinator.onClose = { [weak self, weak coordinator] in
+            self?.removeChild(coordinator)
+        }
+       // self.router.push(coordinator, animated: true, completion: nil)
+        self.router.present(coordinator, animated: true)
+    }
 }

@@ -10,6 +10,7 @@ import Foundation
 protocol CarCurrentNavigationDelegate: AnyObject {
     func openFuel()
     func openGarage()
+    func openCarService(car: Car)
 }
 
 protocol CarCurrentPresenterType {

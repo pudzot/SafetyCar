@@ -14,13 +14,13 @@ struct VehicleCell {
 
 public enum VehicleCellItem {
     
-    case lock
+    case service
     case fuel
     
     var title: String {
         switch self {
-        case .lock:
-            return "Blokada"
+        case .service:
+            return "Serwis"
         case .fuel:
             return "Paliwo"
         }

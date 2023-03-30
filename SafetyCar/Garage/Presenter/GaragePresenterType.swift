@@ -9,6 +9,8 @@
 protocol GarageNavigationDelegate: AnyObject {
     
     func openSelectedCar(id: String)
+    
+    func openAddCar()
 }
 
 protocol GaragePresenterType: AnyObject {
@@ -17,4 +19,5 @@ protocol GaragePresenterType: AnyObject {
     
     func presentSelectedCar(id: String)
     
+    func presentAddCar()
 }

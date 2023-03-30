@@ -28,10 +28,7 @@ final class GarageViewController: BaseContentStateViewController {
     }
     
     @objc func addVehicle() {
-//        let model = AddCar(uid: "", brand: "Audi", model: "A3", year: 2009, fuelType: "Diesel", odometer: "200100")
-//       // let model = AddCar(uid: "", brand: "Mercedes", model: "A200", year: 2015, fuelType: "Diesel", odometer: "165514")
-//        service.uploadCars(forModel: model) { Error, ref in
-//        }
+        self.presenter.presentAddCar()
     }
     
     required init?(coder: NSCoder) {

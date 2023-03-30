@@ -7,11 +7,19 @@
 
 import Foundation
 import FirebaseDatabase
+import FirebaseStorage
+
+let STORAGE_REF = Storage.storage().reference()
+let STORAGE_PROFILE_IMAGE_CARS = STORAGE_REF.child("profile_image_cars")
+let STORAGE_OTHER_IMAGE = STORAGE_REF.child("other_image")
 
 let DB_REF = Database.database().reference()
 let REF_USERS = DB_REF.child("USERS")
 let REF_CARS = DB_REF.child("CARS")
 let REF_USER_CARS = DB_REF.child("USER-CARS")
+let REF_SERVICE = DB_REF.child("SERVICES")
+
+
 
 
 struct Constants {

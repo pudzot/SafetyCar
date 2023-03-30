@@ -8,10 +8,6 @@
 import Foundation
 import FirebaseAuth
 
-
-
-
-
 final class GaragePresenter {
     
     private weak var view: GarageViewType?
@@ -28,6 +24,11 @@ final class GaragePresenter {
 }
 
 extension GaragePresenter: GaragePresenterType {
+    
+    func presentAddCar() {
+        self.navigationDelegate?.openAddCar()
+    }
+    
    
     func presentSelectedCar(id: String) {
         navigationDelegate?.openSelectedCar(id: id)

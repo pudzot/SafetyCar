@@ -21,14 +21,22 @@ class CarCurrentCoordinator: NewCoordinator {
 }
 
 extension CarCurrentCoordinator: CarCurrentNavigationDelegate {
-   
+    
+    func openCarService(car: Car) {
+        let coordinator = CarServiceCoordinator(car: car, router: router)
+        addChild(coordinator)
+        
+        router.push(coordinator, animated: true) { [weak self, weak coordinator] in
+            self?.removeChild(coordinator)
+        }
+    }
+
     func openGarage() {
 //        let navigationController = NavigationController()
 //        let router = Router(navigationController: navigationController)
         let coordinator = GarageCoordinator(router: router)
        
         coordinator.didSelect = { [weak self, weak coordinator] IDCar  in
-            print(IDCar)
             self!.presenter.selectedCarID = IDCar
             self?.removeChild(coordinator)
             self?.router.popToRootModule(animated: true)
@@ -40,7 +48,6 @@ extension CarCurrentCoordinator: CarCurrentNavigationDelegate {
         }
     }
     
-   
     func openFuel() {
         let coordinator = FuelCoordinator(router: router)
         addChild(coordinator)

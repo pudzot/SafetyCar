@@ -41,16 +41,7 @@ final class CarCurrentCollectionViewCell: UICollectionViewCell {
         label.text = "Vehicle Access"
         label.textAlignment = .center
         label.textColor = .black
-        label.font = .systemFont(ofSize: 18, weight: .regular)
-        return label
-    }()
-    
-    let vehicleDescription: UILabel = {
-        let label = UILabel()
-        label.text = "4 issue"
-        label.textColor = .black
-        label.textAlignment = .center
-        label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.font = .systemFont(ofSize: 18, weight: .bold)
         return label
     }()
     
@@ -71,7 +62,6 @@ final class CarCurrentCollectionViewCell: UICollectionViewCell {
         self.imageView.layer.borderWidth = 0.5
         
         self.addSubview(vehicleTitle)
-        self.addSubview(vehicleDescription)
         self.addSubview(imageView)
         self.addSubview(blurView)
         self.addSubview(lockImageView)
@@ -94,20 +84,13 @@ final class CarCurrentCollectionViewCell: UICollectionViewCell {
             make.height.equalTo(20)
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview().inset(16)
-        }
-        
-        vehicleDescription.snp.makeConstraints { make in
-            make.top.equalTo(vehicleTitle.snp.bottom)
-            make.height.equalTo(20)
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview().inset(24)
             make.bottom.equalToSuperview().inset(8)
         }
+    
     }
     
     func configure(vehicleItem: VehicleCell) {
         self.vehicleTitle.text = vehicleItem.elements.title
-        self.vehicleDescription.text = vehicleItem.image
         self.imageView.image = UIImage(named: vehicleItem.image!)
     }
 }

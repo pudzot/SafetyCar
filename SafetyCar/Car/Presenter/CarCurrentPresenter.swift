@@ -14,7 +14,9 @@ final class CarCurrentPresenter {
     
     private lazy var serviceCar = CarsService()
     
-    var selectedCarID: String = "-NR3a8u8Zjvx3RHBXTW-" {
+    var car: Car?
+
+    var selectedCarID: String = UserDefaults.standard.string(forKey: "carID") ?? "" {
         didSet {
             fetchCars()
         }
@@ -36,10 +38,10 @@ extension CarCurrentPresenter: CarCurrentPresenterType {
     
     func prepareViewModel(model: Car) {
         var items = [VehicleCell]()
-        items.append(VehicleCell(image: "mercedes", elements: .lock))
-        items.append(VehicleCell(image: "lesson_placeholder", elements: .fuel))
+        items.append(VehicleCell(image: "carService", elements: .service))
+        items.append(VehicleCell(image: "fuel", elements: .fuel))
         let dataSource = CarCurrentDataSource(vehicleItems: items, car: model)
-        
+        UserDefaults.standard.set(model.carID, forKey: "carID")
         self.view?.display(dataSource: dataSource)
     }
     
@@ -48,24 +50,29 @@ extension CarCurrentPresenter: CarCurrentPresenterType {
             fetchCar(with: selectedCarID)
         } else {
             serviceCar.fetchCarsForUser { results in
-//                let carid = results
-//                    .filter { $0.carID == self.selectedCarID }
-//                    .map { $0 }
-//                print(carid)
+                let carid = results
+                    .map { $0.carID }
+    
+                self.fetchCar(with: carid[0])
         }
         }
     }
     
     func fetchCar(with carID: String) {
         serviceCar.fetchCar(withCarID: carID) { result in
+            self.car = result
             self.prepareViewModel(model: result)
+            
         }
     }
     
     func open(_ item: VehicleCellItem) {
         switch item {
-        case .lock:
-            print("lock")
+        case .service:
+            print("Serwis")
+            guard let car = car else { return }
+            print(car.carID)
+            self.navigationDelegate?.openCarService(car: car)
             
         case .fuel:
             print("fuel")
